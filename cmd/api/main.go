@@ -20,7 +20,7 @@ func main() {
 		Handler: app.routes(),
 	}
 
-	// start the server
+	// start the serverg
 	err := srv.ListenAndServe()
 	if err != nil {
 		log.Panic(err)
