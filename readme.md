@@ -1,7 +1,7 @@
 # Microservices Architecture Overview
 
 ## Description
-In this Project, I developed a microservice architecture in Golang. The application has following features:
+In this Project, I developed a microservice architecture in Golang. The application has the following features:
 
 - It emphasizes maintainability and testability;
 - It promotes loose coupling with other parts of the application;
@@ -9,7 +9,7 @@ In this Project, I developed a microservice architecture in Golang. The applicat
 - It is structured around business capabilities;
 - It is typically managed by a small team.
 
-The, self-contained, loosely coupled microservices that will communicate with one another and a simple front-end application with a REST API, with RPC, over gRPC, and by sending and consuming messages using AMQP, the Advanced Message Queuing Protocol. The microservices we build will include the following functionality:
+The self-contained, loosely coupled microservices will communicate with one another and a simple front-end application with a REST API, with RPC, over gRPC, and by sending and consuming messages using AMQP, the Advanced Message Queuing Protocol. The microservices we build will include the following functionality:
 
 1. **Front End service**: It just displays web pages.
 2. **Authentication service**: Handles authentication with a Postgres database.
@@ -18,7 +18,7 @@ The, self-contained, loosely coupled microservices that will communicate with on
 5. **Broker service**: An optional single point of entry into the microservice cluster.
 6. **Mail service**: Takes a JSON payload, converts into a formatted email, and sends it out.
 
-All of these services will be written in Go, commonly referred to as Golang, a language which is particularly well suited to building distributed web applications.
+All of these services are written in Go, particularly well suited to building distributed web applications.
 
 
 ## Resources
