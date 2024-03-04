@@ -2,3 +2,5 @@
 brokerApp
 /gomicro-frontend
 /gomicro-proj
+db-data/postgres/*
+*.code-workspace
