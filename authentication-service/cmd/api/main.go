@@ -15,6 +15,7 @@ import (
 )
 
 const webPort = "80"
+
 var counts int64
 
 type Config struct {
@@ -25,7 +26,7 @@ type Config struct {
 func main() {
 	log.Println("Starting authentication service")
 
-	// todo connect to DB
+	// connect to DB
 	conn := connectToDB()
 	if conn == nil {
 		log.Panic("Can't connect to Postgres!")
@@ -64,10 +65,11 @@ func openDB(dsn string) (*sql.DB, error) {
 
 func connectToDB() *sql.DB {
 	dsn := os.Getenv("DSN")
+
 	for {
 		connection, err := openDB(dsn)
 		if err != nil {
-			log.Println("Postgress not yet ready ...")
+			log.Println("Postgres not yet ready ...")
 			counts++
 		} else {
 			log.Println("Connected to Postgres!")
@@ -79,8 +81,8 @@ func connectToDB() *sql.DB {
 			return nil
 		}
 
-		log.Println("Backing off for tw0 seconds....")
-		time.Sleep(2*time.Second)
+		log.Println("Backing off for two seconds....")
+		time.Sleep(2 * time.Second)
 		continue
 	}
 }
