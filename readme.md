@@ -1,4 +1,4 @@
-# Microservices Architecture Overview
+# Highly available, scalable, resilient, distributed application using Go
 
 ## Description
 In this Project, I developed a microservice architecture in Golang. The application has the following features:
